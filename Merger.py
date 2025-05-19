@@ -1,10 +1,6 @@
 from pypdf import PdfWriter
 def merge_pdfs(input_paths: list[str], output_path: str):
     """Merges multiple PDF files into a single PDF.
-
-    Args:
-        input_paths: A list of paths to the PDF files to be merged.
-        output_path: The path where the merged PDF will be saved.
     """
     merger = PdfWriter()
     for path in input_paths:
