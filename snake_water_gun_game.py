@@ -1,3 +1,6 @@
+"""This Python script simulates the classic "Snake, Water, Gun" game where the computer randomly chooses one option, and the user inputs their choice; 
+it then determines and prints the outcome (win, lose, or draw) based on the game's rules."""
+
 import random
 l=random.randint(1,3)
 a=int(input("""enter your choice
