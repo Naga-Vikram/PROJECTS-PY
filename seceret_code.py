@@ -1,3 +1,7 @@
+"""This program allows you to encode a name by adding random characters 
+and moving the first letter to the end for longer words, or decode it back to the original, with a special handling for words shorter than three letters by reversing them. 
+It prompts for encoding (1) or decoding (0) and then performs the chosen operation on the input."""
+
 # #seceret code
 # #vikram -> gggmarkivhh
 import random
