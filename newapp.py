@@ -1,21 +1,15 @@
 import requests
 from datetime import datetime
-#api=pub_8758248bac1a7b2f97b5dd257c7bc54a37646
+
 def fetch_news(api_key, query="climate"):
     """
     Fetches news articles from the Newsdata.io API using requests.
-
-    Args:
-        api_key: Your Newsdata.io API key.
-        query: The search query (e.g., "climate", "technology").
-
-    Returns:
-        A dictionary containing the API response, or None on error.
+    
     """
     url = f"https://newsdata.io/api/1/news?apikey={api_key}&q={query}"
     try:
         response = requests.get(url)
-        response.raise_for_status()  # Raise HTTPError for bad responses
+        response.raise_for_status()  
         data = response.json()
         return data
     except requests.exceptions.HTTPError as e:
@@ -43,12 +37,6 @@ def format_date(date_string):
 def prepare_news_for_display(api_response):
     """
     Prepares news articles from the API response for display.
-
-    Args:
-        api_response: The dictionary returned by the Newsdata.io API.
-
-    Returns:
-        A list of dictionaries, where each dict is a formatted article, or an empty list.
     """
     formatted_articles = []
     if api_response and api_response.get('status') == 'success':
