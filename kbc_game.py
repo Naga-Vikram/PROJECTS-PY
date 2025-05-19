@@ -1,8 +1,16 @@
-n=[
-    [""""who is your fav1""","vikram","rajesh","karun","cutiee",1],
-  [""""who is your fav2""","vikram","rajesh","karun","cutiee",2],
-  [""""who is your fav3""","vikram","rajesh","karun","cutiee",3],
-  [""""who is your fav4""","vikram","rajesh","karun","cutiee",4]
+""""Kaun Banega Crorepati" (KBC), where players are presented with a question 
+      and must choose the correct answer from the given options."""
+
+
+n = [
+    ["What is the capital of India?", "Mumbai", "New Delhi", "Kolkata", "Chennai", 2],
+    ["Which planet is known as the 'Red Planet'?", "Mars", "Jupiter", "Venus", "Saturn", 1],
+    ["What is the chemical symbol for water?", "Wa", "H2O", "Ox", "Hy", 2],
+    ["Who wrote the play 'Romeo and Juliet'?", "Charles Dickens", "William Shakespeare", "Jane Austen", "Mark Twain", 2],
+    ["What is the largest ocean on Earth?", "Atlantic Ocean", "Indian Ocean", "Arctic Ocean", "Pacific Ocean", 4],
+    ["Which gas do plants absorb from the atmosphere?", "Oxygen", "Carbon Dioxide", "Nitrogen", "Hydrogen", 2],
+    ["What is the currency of Japan?", "Yuan", "Won", "Yen", "Ringgit", 3],
+    ["Who painted the Mona Lisa?", "Vincent van Gogh", "Leonardo da Vinci", "Pablo Picasso", "Claude Monet", 2]
 ]
 levels=[1000,2000,3000,4000]
 for i in range(0,len(n)):
